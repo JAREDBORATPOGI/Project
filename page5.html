@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - OB Montessori Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9fb;
+    }
+    .page-title {
+      font-weight: 700;
+      color: #0d3b66;
+      background-color: #e6d9f2;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+    .contact-info p {
+      background-color: #e6d9f2;
+      display: inline-block;
+      padding: 8px 15px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .form-label {
+      font-weight: 600;
+    }
+    .form-control, .form-select {
+      border-radius: 50px;
+      padding: 12px 20px;
+      border: 1px solid #ced4da;
+    }
+    .btn-send {
+      background-color: #0d3b66;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 60px;
+      font-weight: 600;
+    }
+    .btn-send:hover {
+      background-color: #0a2d52;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR - CONSISTENT WITH OTHER PAGES -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
+      <img src="oblogo.jpg" alt="OB Logo" width="200" height="80" class="me-3">
+      OB Montessori Center
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="page2.html">Our Campuses</a></li>
+        <li class="nav-item"><a class="nav-link" href="page3.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="page4.html">Enroll Now</a></li>
+        <li class="nav-item"><a class="nav-link active" href="page5.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<section class="pt-5 mt-5 py-5">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+
+      <!-- LEFT SIDE: CONTACT INFO -->
+      <div class="col-lg-6">
+        <h1 class="page-title mb-4">Contact Us</h1>
+        
+        <p class="lead mb-4">
+          If you have questions, need more information, or want to schedule a visit, we are here to help.
+        </p>
+
+        <div class="contact-info mb-4">
+          <p><strong>Phone:</strong> +63 2 8722 9720 to 26</p>
+          <p><strong>Email:</strong> info@obmontessori.edu.ph</p>
+          <p><strong>Address:</strong> 3 Eisenhower St., Bgy. Greenhills, San Juan City, Metro Manila, Philippines</p>
+        </div>
+
+        <p class="lead">
+          Kindly fill out the form and we will get back to you.
+        </p>
+      </div>
+
+      <!-- RIGHT SIDE: CONTACT FORM -->
+      <div class="col-lg-6">
+        <form>
+          <!-- NAME -->
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">Name <span class="text-danger">(required)</span></label>
+              <input type="text" class="form-control" id="firstName" placeholder="First Name">
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">&nbsp;</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+            </div>
+          </div>
+
+          <!-- PHONE -->
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone <span class="text-danger">(required)</span></label>
+            <input type="tel" class="form-control" id="phone" placeholder="">
+          </div>
+
+          <!-- EMAIL -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email <span class="text-danger">(required)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="">
+          </div>
+
+          <!-- CAMPUS -->
+          <div class="mb-3">
+            <label for="campus" class="form-label">Campus</label>
+            <select class="form-select" id="campus">
+              <option selected>Select Campus</option>
+              <option>Angeles</option>
+              <option>Fairview</option>
+              <option>Las Piñas</option>
+              <option>Greenhills</option>
+              <option>Sta. Ana</option>
+            </select>
+          </div>
+
+          <!-- GRADE -->
+          <div class="mb-3">
+            <label for="grade" class="form-label">Grade</label>
+            <select class="form-select" id="grade">
+              <option selected>Select Student Grade Level</option>
+              <option>Casa</option>
+              <option>Grade 1</option>
+              <option>Grade 2</option>
+              <option>Grade 3</option>
+              <option>Grade 4</option>
+              <option>Grade 5</option>
+              <option>Grade 6</option>
+              <option>Grade 7</option>
+              <option>Grade 8</option>
+              <option>Grade 9</option>
+              <option>Grade 10</option>
+              <option>Grade 11</option>
+              <option>Grade 12</option>
+            </select>
+          </div>
+
+          <!-- MESSAGE -->
+          <div class="mb-4">
+            <label for="message" class="form-label">Message <span class="text-danger">(required)</span></label>
+            <textarea class="form-control" id="message" rows="5" style="border-radius: 20px;"></textarea>
+          </div>
+
+          <!-- SUBMIT BUTTON -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-send">SEND</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 O.B. Montessori Center | ICT 9 Q2 Project</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
